@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Based Project</title>
+
+    <style>
+                *{
+                     box-sizing: border-box;
+                     margin: 0;
+                     padding: 0;
+                     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+                body{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5vw;
+                    justify-content: space-between;
+                    align-items: center;
+                    /* border:5px solid red; */
+                    background-color: lightcyan;
+            
+                } 
+                 
+                .heading{
+                     /* border:5px solid black; */
+                     display: flex;
+                     flex-direction: row;
+                     width: 60vw;
+                     justify-content: center;
+                     align-items: center;
+                     background-color: yellow;
+                     font-size: 1.3vw;
+                     color:crimson;
+                     box-shadow: 1px 1px 1.5px 2.5px grey;
+                     position: sticky;
+                    top:0;
+                    opacity: 0.8;
+
+                }
+                .task{ 
+                        border: 2px solid green;
+                        display: flex;
+                        flex-direction:row;
+                        gap: 1vw;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-image:linear-gradient(to left,  pink,blue,red);
+                       
+                }
+                /* .new{
+                        animation-duration: 300ms;
+                        animation-delay: 1s;
+                        animation-duration: ease-in-out;
+                        animation-iteration-count: infinite;
+                        animation-duration: 200ms;
+                        animation-delay: 1s;
+                        animation-duration: ease-in-out;
+                        animation-iteration-count: infinite;
+                        
+                } */
+
+                    /* .task :hover{
+                                  
+                                   transform: rotateY(180deg);
+
+                                 }  */
+                
+                 .container-3{
+
+                                 /* border: 2px solid black; */
+                                display: flex;
+                                flex-direction:row;
+                                gap: 1vw;
+                                flex-wrap: nowrap;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                width: 100%;
+                                background-color: lightcyan;
+                                padding: 5vw;
+
+                 }
+
+                 form{
+                    
+                    width: 30vw;
+                    padding: 3vw;
+                    border: 6px groove olivedrab;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vw;
+                    justify-content: center;
+                    align-items:center;
+                    background-color: lightseagreen;
+                    box-shadow: 0 0 3vw 3vw  pink;
+                 }
+                  
+                 input{
+                    
+                    padding: 10px;
+                    border:3px groove red;
+                    border-radius: 5px;
+                    font-size: medium;
+                 }
+                
+                 .btn{
+                     
+                    
+                    padding: 10px;
+                    border:3px groove blue;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    flex-basis: 20px;
+                    font-size: 1vw;
+                 }
+                 
+                table{
+                    /* margin-left:20rem; */
+                    border: 5px solid black;;
+                    border-collapse:collapse;
+                    
+                     background-color: blanchedalmond;
+                    
+                }
+                tr,th{
+                    border:5px solid black;
+                    padding:20px;
+                    text-align: center;
+                    font-weight: bold;
+
+                }
+
+                .password{
+                    /* border: 5px solid green; */
+                    display: flex;
+                    flex-direction: row;
+                    gap:1vw;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0.5vw;
+                    background-color: grey;
+                    position: sticky;
+                    bottom:0;
+                    color:white
+                }
+                .password-detail{
+                    background-color: lightsteelblue;
+                    padding: 2vw;
+                }
+                .shape{
+                    height: 5vw;
+                    width: 7vw;
+                    padding:1vw;
+                    text-align: center;
+                     
+                   
+                }
+              
+                
+                .square1{
+                    background-color: red;
+                }
+                .square2{
+                    background-color: orange;
+                }
+                .square3{
+                    background-color: green;
+                }
+                
+    </style>
+    
+</head>
+<body>           
+
+                <div class="heading">
+                    <h1>TASK BASED PROJECT</h1>
+                </div>
+
+                <div class="task">
+                    <h2 class="new">Task-1 -> You have to prevent default event of button tag in form.</h2>
+                    <h2 class="new">Task-2 -> Connect form with table.</h2>
+                    <h2 class="new">Task-3 -> Create two button 'Insert At Start' or 'Insert At End'.</h2>
+                    <h2 class="new">Task-4 -> Apply color's on password column in table based on password length.</h2>
+                </div>
+
+                <div class="container-3">
+                    <form>
+                         <input type="text" placeholder="username " required name="username" value="" class="input"> 
+                         <input type="password" placeholder="password" required name="password" value="" class="input"> 
+     
+                         <button class="btn">Insert At start</button> 
+     
+                         <button class="btn">Insert At End</button>
+                     </form>
+ 
+                      <table>
+                        <colgroup>
+                            <col style="background-color:lightsalmon;">
+                            <col style="background-color: chocolate;">
+                        </colgroup>
+                         <tr>
+                                 <th>S NO.</th>
+                                 <th>Username</th>
+                                 <th>Password</th>
+                        </tr>
+                      </table>
+                </div>
+
+                <div class="password">
+                    <div class="password-detail">
+                          <h2>Color's changing with password length.</h2><br>
+                          <p>Red =length <= 8</p>
+                          <p>Orangered=length >8 and length <=10</p>
+                          <p>Green=length >10</p>
+                   </div>
+                    <div class="shape square1"></div>
+                    <div class="shape square2"></div>
+                    <div class="shape square3"></div>
+                </div>
+                
+
+
+                <script src="form_tasks.js"></script>
+</body>
+</html>
